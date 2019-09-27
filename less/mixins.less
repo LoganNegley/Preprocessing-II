@@ -1,1 +1,31 @@
 // Mixins in here
+.make-btn(@bg-color,@radius,@text-color,@width,@align) {
+  background-color: @bg-color;
+  border-radius: @radius;
+  color: @text-color;
+  width: @width;
+  padding: @radius + 0.25;
+  text-align: @align;
+  font-size: @radius + 1;
+}
+
+.btn {
+  .make-btn(@eastern-blue, 1rem, @main-bg, 80%, center);
+  //////////Media at 500////////////
+  @media @mobile {
+    width: 90%;
+  }
+}
+
+///////////Animation Mixin//////////////
+.color-changer(@color1,@color2,@color3) {
+  from {
+    background-color: @color1;
+  }
+  to {
+    background-color: @color2;
+  }
+  to {
+    background-color: @color3;
+  }
+}
