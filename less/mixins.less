@@ -1,14 +1,14 @@
 // Mixins in here
-.make-btn(@bg-color,@radius,@text-color,@width,@padding,@align,@text-size) {
+.make-btn(@bg-color,@radius,@text-color,@width,@align) {
   background-color: @bg-color;
   border-radius: @radius;
   color: @text-color;
   width: @width;
-  padding: @padding;
+  padding: @radius + 0.25;
   text-align: @align;
-  font-size: @text-size;
+  font-size: @radius + 1;
 }
 
 .btn {
-  .make-btn(@eastern-blue, 10px, @main-bg, 200px, 1.25rem, center, 2rem);
+  .make-btn(@eastern-blue, 1rem, @main-bg, 80%, center);
 }
