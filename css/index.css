@@ -184,6 +184,9 @@ header a {
   text-decoration: none;
   color: black;
 }
+hr {
+  border: dashed #C0C0C0 1.5px;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
