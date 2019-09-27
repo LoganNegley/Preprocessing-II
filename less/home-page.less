@@ -57,6 +57,7 @@
     }
 
     .img-content {
+      order: 2;
       padding-right: 1%;
       padding-left: 0;
     }
@@ -76,10 +77,19 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    //////////Media at 500////////////
+    @media @mobile {
+      flex-flow: column nowrap;
+      align-items: center;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      //////////Media at 500////////////
+      @media @mobile {
+        width: 70%;
+      }
     }
   }
 } // home
