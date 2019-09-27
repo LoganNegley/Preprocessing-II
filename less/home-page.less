@@ -14,17 +14,35 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    //////////Media at 500////////////
+    @media @mobile {
+      flex-flow: column;
+      justify-content: center;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+      //////////Media at 500////////////
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      //////////Media at 500////////////
+      @media @mobile {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
+        //////////Media at 500////////////
+        @media @mobile {
+          min-width: 100%;
+        }
       }
     }
   }

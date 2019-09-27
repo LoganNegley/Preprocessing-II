@@ -1,11 +1,14 @@
 // Navigation Styles here//
 
-header {
+.nav {
   margin: 1rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 
+  @media @mobile {
+    flex-flow: column nowrap;
+  }
   .logo-text {
     flex-grow: 2;
   }
