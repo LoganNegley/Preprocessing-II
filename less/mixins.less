@@ -17,14 +17,15 @@
   }
 }
 
-
 ///////////Animation Mixin//////////////
-.color-changer(){
-  from{@eastern-blue}
-  to{}
-}
-
-
-@keyframes color-change{
-
+.color-changer(@color1,@color2,@color3) {
+  from {
+    background-color: @color1;
+  }
+  to {
+    background-color: @color2;
+  }
+  to {
+    background-color: @color3;
+  }
 }

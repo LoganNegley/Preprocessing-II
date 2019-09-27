@@ -1,3 +1,14 @@
+@keyframes color-change-btn {
+  from {
+    background-color: #17a2b8;
+  }
+  to {
+    background-color: #55ac67;
+  }
+  to {
+    background-color: #ffba4b;
+  }
+}
 .btn {
   background-color: #17a2b8;
   border-radius: 1rem;
@@ -305,4 +316,7 @@ hr {
   .home .content-pick .destination {
     width: 70%;
   }
+}
+.home .content-pick .destination .btn {
+  animation: color-change-btn 5s infinite;
 }
