@@ -12,5 +12,17 @@
 @eastern-blue: #17a2b8;
 @sandy-beach: #ffebcd;
 
+/////////My added variables for animation////////
+@sec-color: #55ac67;
+@third-color: #ffba4b;
+
+////////////Keyframes///////////
+@keyframes color-change-btn {
+  .color-changer(@eastern-blue, @sec-color, @third-color);
+}
+
+@keyframes color-change-logo {
+  .color-changer(@shark, @eastern-blue);
+}
 //Mobile at max-width 500px
 @mobile: ~"(max-width:500px)";
